@@ -29,7 +29,3 @@ async def executeCommand(cmd: str, controller):
     command_func, arg = handler_entry
     exec_result = await command_func(controller, arg)
     return exec_result
-
-    @command("dummy")
-    async def dummy_command(self, arg: self):
-        self.ui.generate_dummy_message()
